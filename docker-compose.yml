@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  node:
+    build: ./node
+    tty: true
+    volumes:
+      - ./node:/app
+    ports:
+      - "5000:5000"
